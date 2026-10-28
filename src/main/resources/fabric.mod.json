@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "mca_identity_fix",
+  "version": "${version}",
+  "name": "MCA Villager Identity Fix",
+  "description": "Keeps MCA Reborn villagers' UUIDs (and so their family, marriages and village homes) when they are picked up with Gently Holds, and stops Gently Holds' held-villager sounds from filling the MCA family tree with duplicate entries.",
+  "authors": ["ps5"],
+  "license": "GPL-3.0",
+  "environment": "*",
+  "mixins": ["mca_identity_fix.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.18.0",
+    "minecraft": "26.1.2",
+    "mca": "8.1.11+26.1.2"
+  },
+  "suggests": { "gentlyholds": "*" }
+}
